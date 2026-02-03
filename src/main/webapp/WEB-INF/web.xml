@@ -390,10 +390,6 @@
     <servlet-class>com.openkm.servlet.admin.TailServlet</servlet-class>
   </servlet>
   <servlet>
-    <servlet-name>DatabaseQueryServlet</servlet-name>
-    <servlet-class>com.openkm.servlet.admin.DatabaseQueryServlet</servlet-class>
-  </servlet>
-  <servlet>
     <servlet-name>AuthServlet</servlet-name>
     <servlet-class>com.openkm.servlet.admin.AuthServlet</servlet-class>
   </servlet>
@@ -830,10 +826,6 @@
   <servlet-mapping>
     <servlet-name>TailServlet</servlet-name>
     <url-pattern>/admin/Tail</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>DatabaseQueryServlet</servlet-name>
-    <url-pattern>/admin/DatabaseQuery</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
     <servlet-name>AuthServlet</servlet-name>

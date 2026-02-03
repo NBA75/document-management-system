@@ -30,7 +30,6 @@ import com.openkm.core.MimeTypeConfig;
 import com.openkm.dao.ConfigDAO;
 import com.openkm.dao.HibernateUtil;
 import com.openkm.dao.bean.Config;
-import com.openkm.servlet.admin.DatabaseQueryServlet.WorkerUpdate;
 import com.openkm.util.*;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileItemFactory;

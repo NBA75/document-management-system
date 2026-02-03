@@ -26,11 +26,7 @@ import com.openkm.core.MimeTypeConfig;
 import com.openkm.dao.HibernateUtil;
 import com.openkm.dao.MimeTypeDAO;
 import com.openkm.dao.bean.MimeType;
-import com.openkm.servlet.admin.DatabaseQueryServlet.WorkerUpdate;
-import com.openkm.util.SecureStore;
-import com.openkm.util.UserActivity;
-import com.openkm.util.WarUtils;
-import com.openkm.util.WebUtils;
+import com.openkm.util.*;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileItemFactory;
 import org.apache.commons.fileupload.FileUploadException;
@@ -296,7 +292,6 @@ public class MimeTypeServlet extends BaseServlet {
 	private void importMimeTypes(String userId, HttpServletRequest request, HttpServletResponse response, final byte[] data,
 			Session dbSession) throws DatabaseException, SQLException {
 		log.debug("import({}, {}, {}, {}, {})", userId, request, response, data, dbSession);
-
         WorkerUpdate worker = new WorkerUpdate();
         worker.setData(data);
         dbSession.doWork(worker);

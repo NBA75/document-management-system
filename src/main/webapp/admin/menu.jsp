@@ -28,13 +28,6 @@
         <img src="img/toolbar/stats.png">
       </a>
     </li>
-    <c:if test="${isMultipleInstancesAdmin}">
-      <li>
-        <a target="frame" href="Scripting" title="Scripting">
-          <img src="img/toolbar/scripting.png">
-        </a>
-      </li>
-    </c:if>
     <li>
       <a target="frame" href="PropertyGroups" title="Metadata">
         <img src="img/toolbar/properties.png">
@@ -50,13 +43,6 @@
         <img src="img/toolbar/profile.png">
       </a>
     </li>
-    <c:if test="${isMultipleInstancesAdmin}">
-      <li>
-        <a target="frame" href="DatabaseQuery" title="Database query">
-          <img src="img/toolbar/database.png">
-        </a>
-      </li>
-    </c:if>
     <li>
       <a target="frame" href="Report" title="Reports">
         <img src="img/toolbar/report.png" title="Reports">
